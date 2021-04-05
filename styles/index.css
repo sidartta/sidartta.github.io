@@ -75,6 +75,9 @@ h5 {
   #navbarItems {
     background: rgba(0, 0, 0);
   }
+  #navTitle {
+    display: none;
+  }
 }
 
 @media (max-width: 991px) {
