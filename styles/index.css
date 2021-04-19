@@ -1,5 +1,5 @@
 /*--- html styling ---*/
-html{
+html {
   /* height: 100%; */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80)
@@ -20,7 +20,6 @@ body {
 
 /*--- Main container styling ---*/
 main {
-  /*margin-top: 1rem;*/
   font-weight: 400;
 }
 
@@ -52,11 +51,14 @@ h5 {
 .social-icons {
   transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
   transform: translateY(0em);
+  -moz-transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  -moz-transition: translateY(0em);
 }
-
 .social-icons:hover {
   transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
   transform: translateY(-0.35em);
+  -moz-transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+  -moz-transform: translateY(-0.35em);
 }
 
 /*--- About me container styling ---*/
