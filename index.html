@@ -28,7 +28,7 @@
         id="mainNavbar"
         class="navbar navbar-expand-md fixed-top navbar-dark p-0"
       >
-        <div class="container-lg">
+        <div class="container-fluid mx-0">
           <a href="index.html" class="navbar-brand">
             <img
               src="images/black-swan.svg"
@@ -75,8 +75,19 @@
                   >Contact</a
                 >
               </li>
+              <li class="nav-item">
+                <a
+                  class="nav-link"
+                  href="resume.html"
+                  tabindex="-1"
+                  aria-disabled="true"
+                  >Resume</a
+                >
             </ul>
-            <form action="https://www.google.com/search" class="d-flex my-3">
+            <form
+              action="https://www.google.com/search"
+              class="d-flex input-group w-auto"
+            >
               <input
                 type="search"
                 class="form-control me-2"
@@ -86,7 +97,7 @@
                 aria-label="googleSearch"
               />
               <button
-                class="btn btn-dark my-2 my-sm-0"
+                class="btn btn-outline-danger my-2 my-sm-0"
                 type="submit"
                 id="googSearchButton"
               >
@@ -98,34 +109,33 @@
       </nav>
     </header>
     <main>
-      <section
-        id="aboutContainer"
-        class="container-fluid text-white p-0 me-auto"
-      >
+      <section id="mainProfile" class="container-fluid text-white p-0 me-auto">
         <div class="row align-items-start mx-2 p-0">
           <div class="col-12 col-md-5 px-0 mt-md-5 sticky-md-top">
             <div
-              class="profile d-flex align-items-center flex-column py-3 py-md-5 mt-md-5"
+              id="quickProfile"
+              class="d-flex align-items-center flex-column py-3 py-md-5 mt-md-5"
             >
               <img
+                id="avatar"
                 src="images/black-swan.svg"
-                class="avatar shadow image-fluid bg-light d-none d-md-block"
+                class="shadow image-fluid bg-light d-none d-md-block"
                 alt="author_pic"
               />
-              <div class="title-portrait text-center">
+              <div id="title-portrait" class="text-center">
                 <h4 class="fw-bold">Mohamed Amine Khalf</h4>
                 <h5 class="fw-light">Test Integration Manager @ Alstom</h5>
                 <h5 class="fw-light">MBA Candidate @ HEC Montreal</h5>
               </div>
               <ul class="no-style-list d-flex justify-content-center my-3">
-                <li>
+                <li class="social-icons">
                   <a href="mailto: mohamed-amine.khalf@hec.ca">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="50"
                       height="50"
                       fill="currentColor"
-                      class="bi bi-envelope social-icons mx-3"
+                      class="bi bi-envelope mx-3"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -134,14 +144,14 @@
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="social-icons">
                   <a href="https://twitter.com/amine_khalf" target="_blank">
                     <svg
                       xmlns="http://www.w3.org/2000/svg"
                       width="50"
                       height="50"
                       fill="currentColor"
-                      class="bi bi-twitter social-icons mx-3"
+                      class="bi bi-twitter mx-3"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -150,7 +160,7 @@
                     </svg>
                   </a>
                 </li>
-                <li>
+                <li class="social-icons">
                   <a
                     href="https://www.linkedin.com/in/mohamed-amine-khalf-ing-msc/"
                     target="_blank"
@@ -160,7 +170,7 @@
                       width="50"
                       height="50"
                       fill="currentColor"
-                      class="bi bi-linkedin social-icons mx-3"
+                      class="bi bi-linkedin mx-3"
                       viewBox="0 0 16 16"
                     >
                       <path
@@ -172,9 +182,12 @@
               </ul>
             </div>
           </div>
-          <div class="col-12 col-md-7 px-0">
-            <div class="container-fluid p-0 py-4 px-5">
-              <div class="about-summary row">
+          <div class="col-12 col-md-7 px-3">
+            <div
+              id="aboutMe"
+              class="container-fluid p-0 py-4 px-2"
+            >
+              <div class="row">
                 <div id="shortBio" class="col">
                   <h3 class="text-uppercase">Biography</h3>
                   <p>
@@ -210,7 +223,7 @@
                   </p>
                 </div>
               </div>
-              <div class="about-summary row my-3">
+              <div id="education-interest"class="row my-3">
                 <div class="col-12 col-lg-6">
                   <h5 class="fw-bold text-uppercase">Interests</h5>
                   <ul class="about-summary-list no-style-list">
@@ -236,7 +249,7 @@
                     </li>
                   </ul>
                 </div>
-                <div id="education" class="col-12 col-lg-6">
+                <div class="col-12 col-lg-6">
                   <h5 class="fw-bold text-uppercase">Education</h5>
                   <ul class="about-summary-list no-style-list">
                     <li>

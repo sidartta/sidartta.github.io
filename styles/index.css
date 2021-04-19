@@ -1,5 +1,5 @@
-/* html styling*/
-html {
+/*--- html styling ---*/
+html{
   /* height: 100%; */
   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url(https://images.unsplash.com/photo-1528819622765-d6bcf132f793?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=2550&q=80)
@@ -10,7 +10,7 @@ html {
   background-size: cover;
 }
 
-/* body styling */
+/*--- body styling ---*/
 body {
   min-height: 100%;
   background: none;
@@ -18,56 +18,70 @@ body {
   padding-top: 74px;
 }
 
-/* Main container styling */
+/*--- Main container styling ---*/
 main {
   /*margin-top: 1rem;*/
   font-weight: 400;
 }
 
-/* Navigation bar styling */
+/*--- Navigation bar styling ---*/
 #mainNavbar {
   font-weight: bolder;
+  background-color: black;
 }
-
 .navbar-brand img {
   width: 4rem;
   border-radius: 50%;
 }
-
-/* About me section formatting */
-#aboutContainer {
-  max-width: 1200px;
+.navbar-nav li .active {
+  border-bottom: 2px solid red;
+}
+/*--- Main Profile section styling ---*/
+#mainProfile {
+  max-width: 1600px;
 }
 
-/* ------ Profile container styling */
-.avatar {
-  border-radius: 50%;
-  width: 50%;
-}
-
-.title-portrait h4,
+/*--- Quick Profile section styling ---*/
+#title-portrait h4,
 h5 {
   margin: 1rem auto;
 }
+.social-icons svg {
+  color: white;
+}
+.social-icons {
+  transition: transform 0.6s cubic-bezier(0.87, 0, 0.13, 1);
+  transform: translateY(0em);
+}
 
+.social-icons:hover {
+  transition: transform 0.6s cubic-bezier(0.61, 1, 0.88, 1);
+  transform: translateY(-0.35em);
+}
+
+/*--- About me container styling ---*/
+#aboutMe {
+  line-height: 2;
+}
 #shortBio {
   text-align: justify;
   line-height: 2;
 }
-
+#avatar {
+  border-radius: 50%;
+  width: 50%;
+}
 #mainInterests ul {
   line-height: 2;
 }
-
-.about-summary {
-  line-height: 2;
+#education-interest {
+  font-size: 1.25rem;
 }
-
+/*--- Media Queries ---*/
 @media (max-width: 767px) {
-  .profile {
+  #quickProfile {
     border-bottom: 1px solid darkgrey;
   }
-
   .about-summary-list {
     list-style-type: none;
     padding: 0;
@@ -78,16 +92,15 @@ h5 {
   #navTitle {
     display: none;
   }
-}
-
-@media (max-width: 991px) {
-  .about-summary {
-    text-align: center;
+  #education-interest {
+    font-size: 1rem;
   }
 }
-
-.social-icons {
-  color: white;
+@media (max-width: 1300px) {
+  #education-interest {
+    text-align: center;
+    font-size: 1.1rem;
+  }
 }
 
 /* ---------------- */
@@ -96,4 +109,9 @@ h5 {
 .no-style-list {
   list-style-type: none;
   padding: 0;
+}
+/* --------------- Resume HTML ------------------- */
+#resumePDF {
+  height: 1200px;
+  width: auto;
 }
